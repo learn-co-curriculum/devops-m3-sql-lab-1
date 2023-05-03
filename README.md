@@ -10,33 +10,54 @@ This lab will provide practice with writing queries.
 
 ## Instructions
 
-1. Create a new database named `lab1`.         
-   ![new lab1 database](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/newlab1db.png) <br><br>
-2. Select the `lab1` database and open the query tool.          
-   ![lab1querytool](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/lab1querytool.png)<br><br>
-3. Open the `lab_setup.sql` file in the query tool, then execute the SQL statements to create
-   the `breakfast_item` table and insert 8 rows into the table.      
-   ![lab setup](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/executelabsetup.png)<br><br>
-4. VERY IMPORTANT: You don't want to accidentally overwrite the lab_setup.sql script in case
-   you need to run it again to reinitialize the database table.  You can either (1) Close the
-   current connection by closing the tab on the query tool toolbar, and then open a new query
-   tool connection OR (2) open a new query tool editor panel by clicking the 
-   "new query tool for current connection"  icon.    
-   ![new connection](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/newconnection.png)<br><br>
-5. Execute the following query and confirm the table contains 8 rows:   
-   ![select star](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/allrows.png)<br><br>
+1. Create a new database named `lab1`.
 
+   ![new-lab1-database](https://curriculum-content.s3.amazonaws.com/pe-mod-3/sql-lab1/pgAdmin-create-lab1-database.png)
+
+2. Select the `lab1` database and open the query tool.
+
+   ![lab1querytool](https://curriculum-content.s3.amazonaws.com/pe-mod-3/sql-lab1/pgAdmin-query-tool-view-3.png)
+
+3. Navigate to the file [here](https://raw.githubusercontent.com/learn-co-curriculum/devops-m3-sql-lab-1/main/lab_setup.sql).
+4. Right-click anywhere on the page > select "Save as" to save the file.
+   1. Save the file as "lab_setup.sql". Make sure to save it as a SQL file!
+   2. Remember the place the file is saved, as you'll need it in the next step.
+
+5. Open the `lab_setup.sql` file in the query tool.
+6. Execute the SQL statements to create the `breakfast_item` table and insert 8
+   rows into the table.
+
+   ![lab-setup](https://curriculum-content.s3.amazonaws.com/pe-mod-3/sql-lab1/pgAdmin-execute-query-3.png)
+
+7. VERY IMPORTANT: You don't want to accidentally overwrite the `lab_setup.sql`
+   script in case you need to run it again to reinitialize the database table.
+   You can either:
+   1. Close the current connection by closing the tab on the query tool
+      toolbar, and then open a new query tool connection.
+   2. OR open a new query tool editor panel by clicking the "new query tool
+      for current connection" icon.
+
+   ![new-connection](https://curriculum-content.s3.amazonaws.com/pe-mod-3/sql-lab1/pgAdmin-new-querytool.png)
+
+8. Execute the following query and confirm the table contains 8 rows:
+
+```sql
+SELECT *
+FROM breakfast_item;
+```
+
+![select-all](https://curriculum-content.s3.amazonaws.com/pe-mod-3/sql-lab1/pgAdmin-select-all-breakfast.png)
 
 ## Tasks
 
 1. Write a SELECT statement to produce the expected result for each task below.
    Use the Query Tool to test your code.
-2. Save the SELECT statement for each task to a new file named task1.sql, task2.sql, etc.
-   Be sure to save using the "Save As" option to avoid overwriting the previous query file.
-   
+2. Save the SELECT statement for each task to a new file named task1.sql,
+   task2.sql, etc.
+   Be sure to save using the "Save As" option to avoid overwriting the previous
+   query file.
+
 ![save as](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/saveas.png)
-
-
 
 <table>
 <tr>
@@ -70,7 +91,6 @@ plain bagel         270
 
 </td>
 </tr>
-
 
 <tr>
 <td>
@@ -115,7 +135,6 @@ veggie wrap
 
 </td>
 </tr>
-
 
 <tr>
 <td>
@@ -203,7 +222,6 @@ count   min     max
 </td>
 </tr>
 
-
 <tr>
 <td>
 Task #8: Display each category and a count
@@ -224,7 +242,6 @@ bagel       4
 
 </td>
 </tr>
-
 
 <tr>
 <td>
@@ -247,8 +264,6 @@ bagel       2
 </td>
 </tr>
 
-
-
 <tr>
 <td>
 Task #10: Display the number of items
@@ -269,12 +284,10 @@ bagel       2
 </td>
 </tr>
 
-
 </table>
-
 
 ## Resources
 
-- [PostgreSQL SELECT](https://www.postgresql.org/docs/current/sql-select.html)   
-- [PostgreSQL ORDER BY](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-order-by/)     
+- [PostgreSQL SELECT](https://www.postgresql.org/docs/current/sql-select.html)
+- [PostgreSQL ORDER BY](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-order-by/)
 - [PostgreSQL GROUP BY](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-group-by/)  
